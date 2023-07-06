@@ -1,22 +1,13 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Hidden,
-  IconButton,
-} from "@mui/material";
+import { AppBar, Toolbar, Button, Hidden, IconButton } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
-import LockOpenIcon from "@mui/icons-material/LockOpen";
 import BookIcon from "@mui/icons-material/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = (theme) => ({
   appBar: {

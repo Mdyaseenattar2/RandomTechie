@@ -1,14 +1,14 @@
 import React from "react";
-import { Grid, Box, Paper, Typography, CardMedia, Card } from "@mui/material";
+import { Grid, Typography, CardMedia } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 //import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import calculateSpacing from "./calculateSpacing";
-import useMediaQuery from "@mui/material/useMediaQuery";
+//import calculateSpacing from "./calculateSpacing";
+//import useMediaQuery from "@mui/material/useMediaQuery";
 import { withTheme } from "@mui/styles";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 //import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from "swiper";
-import useWidth from "../../../shared/functions/useWidth";
+//import useWidth from "../../../shared/functions/useWidth";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   profileImage: {
-    borderRadius: "15px",
     height: 80,
     width: 80,
     borderRadius: 50,
@@ -122,8 +121,8 @@ const data = [
 ];
 
 function Testimonial(props) {
-  const { theme } = props;
-  const width = useWidth();
+  //const { theme } = props;
+  //const width = useWidth();
   const classes = useStyles();
 
   return (
