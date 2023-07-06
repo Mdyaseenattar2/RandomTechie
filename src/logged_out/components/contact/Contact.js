@@ -49,7 +49,7 @@ function Contact(props) {
           <div className={classNames("container-fluid", classes.container)}>
             <Box display="flex" justifyContent="center" className="row">
               <div className={classNames(classes.containerFix, "container")}>
-                <Box justifyContent="space-between" className="row">
+                <Grid container justifyContent="space-between" className="row">
                   <Grid item xs={12} md={5}>
                     <Box
                       display="flex"
@@ -92,7 +92,7 @@ function Contact(props) {
                           </Box>
                         </Grid>
 
-                        <Grid item md={6} style={{ padding: 10 }}>
+                        <Grid item xs={12} md={6} style={{ padding: 10 }}>
                           <Box
                             mb={0}
                             style={{
@@ -157,7 +157,7 @@ function Contact(props) {
                           </Box>
                         </Grid>
 
-                        <Grid item md={6} style={{ padding: 10 }}>
+                        <Grid item xs={12} md={6} style={{ padding: 10 }}>
                           <Box
                             mb={0}
                             style={{
@@ -188,10 +188,15 @@ function Contact(props) {
                     </Box>
                   </Grid>
 
-                  <Grid item md={6} style={{ backgroundColor: "#fafbff" }}>
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    style={{ backgroundColor: "#fafbff" }}
+                  >
                     <ContactForm />
                   </Grid>
-                </Box>
+                </Grid>
               </div>
             </Box>
           </div>

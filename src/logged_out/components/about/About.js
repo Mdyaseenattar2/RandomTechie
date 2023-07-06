@@ -73,7 +73,8 @@ function About(props) {
         <div className={classNames(classes.container)}>
           <Box display="flex" justifyContent="center" className="row">
             <div className={classNames(classes.containerFix, "container")}>
-              <Box
+              <Grid
+                container
                 justifyContent="space-between"
                 className="row"
                 style={{ paddingTop: 10 }}
@@ -148,148 +149,140 @@ function About(props) {
                     alt="About image"
                   />
                 </Grid>
-              </Box>
+              </Grid>
             </div>
           </Box>
         </div>
       </div>
 
       {/* ******  */}
-
-      <div className={classNames("lg-p-top", classes.wrapper)}>
-        <div className={classNames(classes.container)}>
-          <Box display="flex" justifyContent="center" className="row">
-            <div className={classNames(classes.containerFix, "container")}>
-              <Box justifyContent="space-between" className="row">
-                <Grid item md={5}>
-                  <CardMedia
-                    component="img"
-                    image={`${process.env.PUBLIC_URL}/images/logged_out/counts-img.svg`}
-                    className={classes.image}
-                    alt="About image"
-                  />
-                </Grid>
-                <Grid item xs={12} md={6} style={{ padding: 10 }}>
-                  <Box
-                    display="flex"
-                    flexDirection="column"
-                    justifyContent="space-between"
-                  >
-                    {/*  Box 1 */}
-                    <Box justifyContent="space-between" className="row">
-                      <Grid item xs={12} md={6}>
-                        <Box
-                          display="flex"
-                          flexDirection="column"
-                          justifyContent="space-between"
-                        >
-                          <Box mb={0}>
-                            <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                              <strong
-                                style={{
-                                  fontSize: 35,
-                                  color: "rgb(7 65 198)",
-                                  fontWeight: 700,
-                                }}
-                              >
-                                {" "}
-                                65
-                              </strong>
-                            </Typography>
-                            <Typography style={{ fontSize: 16 }}>
-                              <p>
-                                <b>Happy Clients</b> consequuntur voluptas
-                                nostrum aliquid ipsam architecto ut.
-                              </p>
-                            </Typography>
-                          </Box>
-                        </Box>
-                      </Grid>
-
-                      <Grid item md={6}>
-                        <Box mb={0}>
-                          <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                            <strong
-                              style={{
-                                fontSize: 35,
-                                color: "rgb(7 65 198)",
-                                fontWeight: 700,
-                              }}
-                            >
-                              {" "}
-                              85
-                            </strong>
-                          </Typography>
-                          <Typography style={{ fontSize: 16 }}>
-                            <p>
-                              <b>Projects </b>adipisci atque cum quia aspernatur
-                              totam laudantium et quia dere tan.
-                            </p>
-                          </Typography>
-                        </Box>
-                      </Grid>
+      <div className={classNames(classes.container)}>
+        <Box display="flex" justifyContent="center" className="row">
+          <div className={classNames(classes.containerFix, "container")}>
+            <Grid container padding={2} justifyContent={"space-between"} mt={6}>
+              <Grid item xs={12} md={5}>
+                <CardMedia
+                  component="img"
+                  image={`${process.env.PUBLIC_URL}/images/logged_out/counts-img.svg`}
+                  className={classes.image}
+                  alt="About image"
+                />
+              </Grid>
+              <Grid item xs={12} md={6} style={{ padding: 10 }}>
+                <Grid
+                  container
+                  display="flex"
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  spacing={2}
+                >
+                  {/*  Box 1 */}{" "}
+                  <Grid item xs={12} md={5}>
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      justifyContent="space-between"
+                    >
+                      <Box mb={0}>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          <strong
+                            style={{
+                              fontSize: 35,
+                              color: "rgb(7 65 198)",
+                              fontWeight: 700,
+                            }}
+                          >
+                            {" "}
+                            65
+                          </strong>
+                        </Typography>
+                        <Typography style={{ fontSize: 16 }}>
+                          <p>
+                            <b>Happy Clients</b> consequuntur voluptas nostrum
+                            aliquid ipsam architecto ut.
+                          </p>
+                        </Typography>
+                      </Box>
                     </Box>
-
-                    {/* Box 2 */}
-                    <Box justifyContent="space-between" className="row">
-                      <Grid item xs={12} md={6}>
-                        <Box
-                          display="flex"
-                          flexDirection="column"
-                          justifyContent="space-between"
+                  </Grid>
+                  <Grid item xs={12} md={5}>
+                    <Box mb={0}>
+                      <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                        <strong
+                          style={{
+                            fontSize: 35,
+                            color: "rgb(7 65 198)",
+                            fontWeight: 700,
+                          }}
                         >
-                          <Box mb={0}>
-                            <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                              <strong
-                                style={{
-                                  fontSize: 35,
-                                  color: "rgb(7 65 198)",
-                                  fontWeight: 700,
-                                }}
-                              >
-                                {" "}
-                                18
-                              </strong>
-                            </Typography>
-                            <Typography style={{ fontSize: 16 }}>
-                              <p>
-                                <b>Years of experience</b> aut commodi quaerat
-                                modi aliquam nam ducimus aut voluptate non vel.
-                              </p>
-                            </Typography>
-                          </Box>
-                        </Box>
-                      </Grid>
-
-                      <Grid item md={6}>
-                        <Box mb={0}>
-                          <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                            <strong
-                              style={{
-                                fontSize: 35,
-                                color: "rgb(7 65 198)",
-                                fontWeight: 700,
-                              }}
-                            >
-                              {" "}
-                              15
-                            </strong>
-                          </Typography>
-                          <Typography style={{ fontSize: 16 }}>
-                            <p>
-                              <b>Awards </b>rerum asperiores dolor alias quo
-                              reprehenderit eum et nemo pad der.
-                            </p>
-                          </Typography>
-                        </Box>
-                      </Grid>
+                          {" "}
+                          85
+                        </strong>
+                      </Typography>
+                      <Typography style={{ fontSize: 16 }}>
+                        <p>
+                          <b>Projects </b>adipisci atque cum quia aspernatur
+                          totam laudantium et quia dere tan.
+                        </p>
+                      </Typography>
                     </Box>
-                  </Box>
+                  </Grid>
+                  {/* Box 2 */}{" "}
+                  <Grid item xs={12} md={5}>
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      justifyContent="space-between"
+                    >
+                      <Box mb={0}>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          <strong
+                            style={{
+                              fontSize: 35,
+                              color: "rgb(7 65 198)",
+                              fontWeight: 700,
+                            }}
+                          >
+                            {" "}
+                            18
+                          </strong>
+                        </Typography>
+                        <Typography style={{ fontSize: 16 }}>
+                          <p>
+                            <b>Years of experience</b> aut commodi quaerat modi
+                            aliquam nam ducimus aut voluptate non vel.
+                          </p>
+                        </Typography>
+                      </Box>
+                    </Box>
+                  </Grid>
+                  <Grid item xs={12} md={5}>
+                    <Box mb={0}>
+                      <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                        <strong
+                          style={{
+                            fontSize: 35,
+                            color: "rgb(7 65 198)",
+                            fontWeight: 700,
+                          }}
+                        >
+                          {" "}
+                          15
+                        </strong>
+                      </Typography>
+                      <Typography style={{ fontSize: 16 }}>
+                        <p>
+                          <b>Awards </b>rerum asperiores dolor alias quo
+                          reprehenderit eum et nemo pad der.
+                        </p>
+                      </Typography>
+                    </Box>
+                  </Grid>{" "}
                 </Grid>
-              </Box>
-            </div>
-          </Box>
-        </div>
+              </Grid>
+            </Grid>
+          </div>
+        </Box>
       </div>
     </Fragment>
   );

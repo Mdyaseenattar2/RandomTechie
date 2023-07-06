@@ -62,8 +62,19 @@ const Services = (props) => {
             We Delivers Cutting-Edge Solutions for Businesses Worldwide.
           </Typography>
         </div>
-        <Grid container style={{ paddingLeft: 70, marginBottom: 130 }}>
-          <Box style={{ paddingLeft: 25 }}>
+        <Grid
+          container
+          spacing={2}
+          justifyContent={"center"}
+          style={{ marginBottom: 130 }}
+        >
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Card sx={{ maxWidth: 250 }}>
               <CardActionArea>
                 <CardMedia
@@ -97,9 +108,15 @@ const Services = (props) => {
                 </CardActions>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ paddingLeft: 25 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Card sx={{ maxWidth: 250 }}>
               <CardActionArea>
                 <CardMedia
@@ -134,9 +151,15 @@ const Services = (props) => {
                 </CardActions>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ paddingLeft: 25 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Card sx={{ maxWidth: 250 }}>
               <CardActionArea>
                 <CardMedia
@@ -170,9 +193,15 @@ const Services = (props) => {
                 </CardActions>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ paddingLeft: 25 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Card sx={{ maxWidth: 250 }}>
               <CardActionArea>
                 <CardMedia
@@ -206,7 +235,7 @@ const Services = (props) => {
                 </CardActions>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
         </Grid>
 
         {/* CASE STUDY START */}
@@ -223,9 +252,10 @@ const Services = (props) => {
 
         <Grid
           container
-          style={{ paddingLeft: 80, marginBottom: 30, marginTop: 10 }}
+          spacing={2}
+          style={{ marginBottom: 30, marginTop: 10, justifyContent: "center" }}
         >
-          <Box style={{ padding: 14 }}>
+          <Grid item>
             <Card
               sx={{ maxWidth: 525 }}
               style={{
@@ -274,9 +304,9 @@ const Services = (props) => {
                 </div>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ padding: 14 }}>
+          <Grid item>
             <Card
               sx={{ maxWidth: 525 }}
               style={{
@@ -325,9 +355,9 @@ const Services = (props) => {
                 </div>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ padding: 14 }}>
+          <Grid item>
             <Card
               sx={{ maxWidth: 525 }}
               style={{
@@ -371,9 +401,9 @@ const Services = (props) => {
                 </div>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
 
-          <Box style={{ padding: 14 }}>
+          <Grid item>
             <Card
               sx={{ maxWidth: 525 }}
               style={{
@@ -417,7 +447,7 @@ const Services = (props) => {
                 </div>
               </CardActionArea>
             </Card>
-          </Box>
+          </Grid>
         </Grid>
 
         <Grid container style={{ padding: 80, marginTop: 10 }}>
