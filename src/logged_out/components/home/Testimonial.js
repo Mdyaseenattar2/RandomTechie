@@ -82,7 +82,7 @@ const data = [
     username: "Cary Byrd",
     lefticon: <mat-icon style={{ fontSize: iconSize }}>format_quote</mat-icon>,
     testimonial:
-      "I would say quality can be expected from only few and softworld tops in that list.",
+      "I would say quality can be expected from only few and Random Techie tops in that list.",
     image: "/images/logged_out/testimonials/testimonials-1.jpeg",
     designation: " CEO & Founder of eDrugSearch",
   },
@@ -114,7 +114,7 @@ const data = [
     id: 5,
     username: "Rajiv Upadhyay",
     testimonial:
-      "Softworld soulution design and ability to drive the system is best strength they have.",
+      "Random Techie design and ability to drive the system is best strength they have.",
     image: "/images/logged_out/testimonials/testimonials-5.jpeg",
     designation: "Founder Clover Bay Technologies Pvt. Ltd.",
   },

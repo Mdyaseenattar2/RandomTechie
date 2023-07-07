@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(0),
     },
     "@media (min-width: 1280px)": {
-      padding: theme.spacing(3),
+      padding: theme.spacing(0),
     },
   },
 }));
