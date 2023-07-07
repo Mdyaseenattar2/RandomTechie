@@ -46,7 +46,7 @@ function Contact(props) {
           </Typography>
         </Grid>
         <div className={classNames(classes.wrapper)} style={{ paddingTop: 45 }}>
-          <div className={classNames("container-fluid", classes.container)}>
+          <div>
             <Box display="flex" justifyContent="center" className="row">
               <div className={classNames(classes.containerFix, "container")}>
                 <Grid container justifyContent="space-between" className="row">

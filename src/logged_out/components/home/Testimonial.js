@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   testimonial: {
     [theme.breakpoints.down("xs")]: {
-      marginTop: theme.spacing(1),
+      marginTop: theme.spacing(0),
     },
     [theme.breakpoints.between("sm", "md")]: {
       width: "100%",
@@ -127,7 +127,7 @@ function Testimonial(props) {
 
   return (
     <div style={{ backgroundColor: "#FFFFFF" }}>
-      <div className="container-fluid lg-p-top">
+      <div className="container lg-p-top">
         <Typography variant="h3" align="center" className="lg-mg-bottom">
           Testimonials
         </Typography>
