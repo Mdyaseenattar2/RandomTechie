@@ -35,13 +35,14 @@ const useStyles = makeStyles((theme) => ({
     background: "#f7fbfe",
     display: "flex",
     flexDirection: "column",
-    width: "230px",
+    width: "225px",
+    minHeight: "400px",
     alignItems: "center",
     justifyContent: "center",
     // },
-    // [theme.breakpoints.between("sm", "md")]: {
-    //   width: 100,
-    // },
+    [theme.breakpoints.between("sm", "md")]: {
+      width: "80%",
+    },
     "@media (min-width: 1280px)": {
       padding: 30,
       border: "2px solid",
@@ -49,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: 7,
       marginBottom: 70,
       height: "auto",
-      minHeight: "400px",
       background: "#f7fbfe",
       marginLeft: 60,
     },
@@ -137,7 +137,7 @@ function Testimonial(props) {
             spaceBetween={70}
             breakpoints={{
               375: {
-                width: 368,
+                width: 240,
                 slidesPerView: 1,
               },
 
