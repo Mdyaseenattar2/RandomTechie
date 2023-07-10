@@ -92,7 +92,8 @@ const data = [
     testimonial:
       "I would Say Random Techie Is the best in providing us the great resources everytime we need.",
     image: "/images/logged_out/testimonials/testimonials-2.jpeg",
-    designation: "CEO & Founder of Dynamicbit Technologies",
+    designation:
+      "Founder at Dynamicbit Technologies Pvt Ltd.- for service consultancy",
   },
   {
     id: 3,
@@ -104,11 +105,12 @@ const data = [
   },
   {
     id: 4,
-    username: "Sunil",
+    username: "Sunil Parte",
     testimonial:
       "Trust and confidence is always i believe in and Random Techie address it very well.",
     image: "/images/logged_out/testimonials/testimonials-4.jpeg",
-    designation: "CEO",
+    designation:
+      "founder, CEO- MindsClik| solutoz | strategy & Solutions For staffs augmentation",
   },
   {
     id: 5,
@@ -116,7 +118,8 @@ const data = [
     testimonial:
       "Random Techie design and ability to drive the system is best strength they have.",
     image: "/images/logged_out/testimonials/testimonials-5.jpeg",
-    designation: "Founder Clover Bay Technologies Pvt. Ltd.",
+    designation:
+      "Founder Clover Bay Technologies Pvt. Ltd For staffs augmentation.",
   },
 ];
 
@@ -127,7 +130,7 @@ function Testimonial(props) {
 
   return (
     <div style={{ backgroundColor: "#FFFFFF" }}>
-      <div className="container lg-p-top">
+      <div className="container-fluid lg-p-top">
         <Typography variant="h3" align="center" className="lg-mg-bottom">
           Testimonials
         </Typography>
